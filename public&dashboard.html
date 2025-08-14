@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<style>
+body { font-family: sans-serif; padding: 20px; }
+header { display: flex; justify-content: flex-end; margin-bottom: 20px; }
+form { display: flex; flex-direction: column; width: 400px; }
+textarea { margin-bottom: 10px; }
+</style>
+</head>
+<body>
+<header>
+    <a href="/all-scripts" target="_blank">View All Scripts</a>
+</header>
+
+<h1>Post a New Script</h1>
+<form action="/post-script" method="post">
+    <input type="text" name="name" placeholder="Script Name" required /><br>
+    <textarea name="content" rows="10" placeholder="Script Content" required></textarea><br>
+    <input type="text" name="tag" value="#script" readonly /><br>
+    <button type="submit">Post Script</button>
+</form>
+</body>
+</html>
